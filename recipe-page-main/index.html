@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Recipe page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -38,10 +34,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
         margin: 0;
-        padding: 400px;
-        font-family: "/assets/fonts/young-serif/";
+        padding: 20px; /* Adjust padding for smaller screens */
+        font-family: Font, sans-serif;
       }
       .background {
         background-color: white;
@@ -69,7 +64,7 @@
       p {
         margin: 10px 20px;
         text-align: left;
-        font-family: Font;
+        font-family: Font, sans-serif;
       }
       hr {
         width: 100%;
@@ -77,14 +72,15 @@
 
       .wrapper {
         background-color: #fff7fc;
-        padding: 40px;
+        padding: 20px;
         border-radius: 5px;
       }
+
       .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        font-family: Font;
+        font-family: Font, sans-serif;
       }
 
       .item,
@@ -93,7 +89,6 @@
       .item3,
       .item4 {
         padding: 10px;
-        margin-left: 40px;
       }
 
       .item1,
@@ -110,6 +105,13 @@
       hr {
         grid-column: span 2;
         margin: 0;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr; /* Single column on small screens */
+        }
       }
     </style>
   </head>
@@ -207,7 +209,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Farhan Dwi Pramana</a>.
+      >
+      . Coded by <a href="#">Farhan Dwi Pramana</a>.
     </div>
   </body>
 </html>
